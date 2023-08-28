@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contnt="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn2.vectorstock.com/i/1000x1000/36/06/logo-random-gradient-colorful-style-vector-36253606.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <%- include('partials/head.ejs')%>
+    <title>Api - ImgRandoms</title>
+</head>
+<body>
+    
+    <main id="main">
+        <%- include('partials/navbar.ejs')%>
+
+            <section id="sect-01" style="margin-top: 5%;">
+                <div class="left">
+                    <img src="https://cdn.dribbble.com/users/8322394/screenshots/16257129/random_wordmark_logo_design_4x.jpg" width="350px" height="350px" alt="" class="rounded-circle">
+                </div>
+                <div class="right">
+                    <h1 style="font-size: 3em;">Random Img's</h1>
+                    <p style="width: 55ch; font-size: 1.3em;">¡Explora nuestra innovadora API generadora de imágenes aleatorias! Inspira tu creatividad con una variedad infinita de imágenes únicas. Perfecta para diseñadores, artistas y proyectos visuales. Desbloquea un mundo de posibilidades visuales con facilidad.</p>
+                </div>
+            </section>
+            <section id="sect-02">
+                <div class="left">
+                    <h1>Ejemplo Basico</h1>
+                    <p><b>API:</b>  https://apiimgsrandom-production.up.railway.app/api/employees/<b>id</b></p>
+                    <button id="randomImg">Click Me!</button>
+                </div>
+                <div class="right" id="imgContainer">
+                    <img src="https://i.pinimg.com/550x/09/90/fe/0990fe16f61df266c4fc0923bff98c3b.jpg" width="370px" alt="" style="box-shadow: 0 0 6px rgb(52, 52, 52);">
+                </div>
+            </section>
+            <section id="sect-02" style="margin-top: 5%;">
+                <div class="left">
+                    <img src="img/ApiConsumo.png" alt="" width="570px">
+                </div>
+                <div class="right" id="imgContainer">
+                    <h1>Manera de Llamar todos los datos</h1>
+                    <p><b>API:</b>https://apiimgsrandom-production.up.railway.app/api/employees</p>
+                </div>
+            </section>
+            <section style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h1>Ejemplo JavaScript</h1>
+                <img src="img/estructuraAPI.png" alt="" >
+            </section>
+
+            <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+</html>
